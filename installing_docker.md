@@ -1,4 +1,4 @@
-# nstalling WSL2:
+# Installing WSL2:
 
 To set up Docker using WSL 2 (Windows Subsystem for Linux 2), you need to follow these general steps:
 
