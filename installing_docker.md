@@ -4,6 +4,8 @@ To set up Docker using WSL 2 (Windows Subsystem for Linux 2), you need to follow
 
 Install WSL 2: Make sure you have WSL 2 installed on your Windows machine. You can follow Microsoft's documentation to enable and install WSL 2.
 
+```wsl --install```
+
 Install a Linux distribution: Choose a Linux distribution such as Ubuntu, Debian, or CentOS, and install it through the Microsoft Store or by downloading the distribution's package manually.
 
 Set WSL 2 as the default version: Open PowerShell as an administrator and run the following command to set WSL 2 as the default version:
@@ -31,6 +33,8 @@ Configure Docker to use WSL 2 backend: Run the following command to configure Do
 ```
 echo "export DOCKER_CLI=client\nexport DOCKER_HOST=unix:///var/run/docker.sock" >> ~/.bashrc && source ~/.bashrc
 ```
+
+Then use ```printenv``` to see if it has been sucessfully added to the .bashrc
 
 Test Docker installation: Verify that Docker is installed and working correctly by running the following command:
 
