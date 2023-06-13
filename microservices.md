@@ -1,4 +1,7 @@
 # What is a Micro Services Architecture?  
+
+![Alt text](pics/microservices.png)
+
 ### What are the use cases?
 
 Microservices architecture is an architectural style that structures an application as a collection of small, loosely coupled, and independently deployable services. In a microservices architecture, the application is divided into a set of self-contained services that are responsible for specific business capabilities. Each service can be developed, deployed, and scaled independently of the others.
