@@ -117,3 +117,10 @@ Now we want to chnage the bind ip in the config files, so ```ls``` to find the e
 
 save and exit
 
+Run the db using:
+
+```docker run -d -p 27017:27017 shaleka-mongo-db```
+
+and go to localhost:27017 in the web browser, you should see this:
+
+![Alt text](pics/localhost%20mongo.png)
