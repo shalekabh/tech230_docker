@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: mongo
-          image: bradleywoods/mongo-database:v2
+          image: shaleka/tech230-database:v2
           ports:
             - containerPort: 27017
 

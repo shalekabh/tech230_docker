@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: node-app
-          image: bradleywoods/node-app:v2
+          image: shaleka/tech230-sparta-app:v2
           ports:
             - containerPort: 3000
           env:
