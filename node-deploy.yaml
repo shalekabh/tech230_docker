@@ -1,24 +1,22 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: apps/v1 # Specifies the API version to use
+kind: Deployment # Specifies the kind of object to create, in this case, a Deployment                         
 metadata:
-  name: node-deployment
+  name: node-app-deployment # The name of the Deployment                 
 spec:
   selector:
     matchLabels:
-      app: node-app
-  replicas: 3
-  template:
+      app: node-app # Selects Pods with labels matching "app: nginx"
+  replicas: 3 # Creates a replica set with 3 instances/pods                        
+  template: # Specifies the template for creating Pods                               
     metadata:
       labels:
-        app: node-app
+        app: node-app # The labels for the Pods created from this template                       
     spec:
-      containers:
-        - name: node-app
-          image: shaleka/tech230-sparta-app:v2
-          ports:
-            - containerPort: 3000
-          env:
-            - name: DB_HOST
-              value: "mongodb://mongo-svc:27017/posts"
-          imagePullPolicy: Always
-
+      containers: # Specifies the containers to run in the Pod                     
+      - name: node-app # The name of the container                     
+        image: shaleka/tech230-sparta-app:v2 # The image to use for the container
+        ports:
+        - containerPort: 3000 # Specifies the port to expose on the container
+        env: # Creating an Environment variable for connecting to MongoDB
+        - name: DB_HOST
+          value: "mongodb://mongo-db-svc:27017/posts"
