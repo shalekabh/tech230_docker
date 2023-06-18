@@ -9,5 +9,5 @@ spec:
     port: 80 # The port on which the Service will listen
     targetPort: 3000 # The port on the Pods to which the Service will forward traffic
   selector:
-    app: node-app # Selects Pods with labels matching "app: nginx"
+    app: node-app # Selects Pods with labels matching "app: node-app"
   type: NodePort # Specifies the type of Service, in this case, NodePort

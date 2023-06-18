@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: node-app # Selects Pods with labels matching "app: nginx"
+      app: node-app # Selects Pods with labels matching "app: node-app"
   replicas: 3 # Creates a replica set with 3 instances/pods                        
   template: # Specifies the template for creating Pods                               
     metadata:
